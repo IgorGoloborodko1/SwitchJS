@@ -20,18 +20,15 @@ const sum = (a, ...rest) => {
         return a + rest[0];
     }
 
-    let acc = a;
-    const innerFunc = (b) => {
-        acc += b;
-        return innerFunc;
+    return (b) => {
+        return (c) => {
+            return (d) => {
+                return a + b + c + d;
+            }
+        }
     }
-    innerFunc.toString = function () {
-        return acc;
-    };
-
-    return innerFunc;
 }
 
-console.log(sum(2,3));
-console.log(sum(2)(3));
-console.log(sum(1)(2)(3)(4));
+// console.log(sum(2,3));
+// console.log(sum(2)(3));
+// console.log(sum(1)(2)(3)(4));
