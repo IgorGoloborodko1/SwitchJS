@@ -15,20 +15,19 @@ const runningAverage = () => {
 // console.log(rAvg(12));
 
 //Task 2
-const sum = (a, ...rest) => {
-    if(rest.length > 0) {
-        return a + rest[0];
+const sum = (a) => {
+    let acc = a;
+
+    const innerFn = (b) => {
+        acc += b;
+        return innerFn;
     }
 
-    return (b) => {
-        return (c) => {
-            return (d) => {
-                return a + b + c + d;
-            }
-        }
-    }
+    innerFn.toString = () => acc;
+
+    return innerFn;
 }
 
-// console.log(sum(2,3));
-// console.log(sum(2)(3));
-// console.log(sum(1)(2)(3)(4));
+// alert(sum(2,3));
+// alert(sum(2)(3));
+// alert(sum(1)(2)(3)(4));
