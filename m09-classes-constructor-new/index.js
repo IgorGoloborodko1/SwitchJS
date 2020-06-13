@@ -16,13 +16,13 @@ class Vector {
     add(vectorObj) {
         this.verifyVectorArr(vectorObj.vector);
 
-        return this.vector.slice().map((item, index) => item + vectorObj.vector[index]);
+        return this.vector.map((item, index) => item + vectorObj.vector[index]);
     }
 
     subtract(vectorObj) {
         this.verifyVectorArr(vectorObj.vector);
 
-        return this.vector.slice().map((item, index) => item - vectorObj.vector[index]);
+        return this.vector.map((item, index) => item - vectorObj.vector[index]);
     }
 
     dot(vectorObj) {
