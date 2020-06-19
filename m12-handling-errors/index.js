@@ -34,7 +34,7 @@ class Vector {
 }
   
 const a = new Vector([1, 2, 3]);
-const b = new Vector([5, 6,	7, 8]);
+const b = new Vector([5, 6, 7, 8]);
 
 try {
     a.add(b);
