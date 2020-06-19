@@ -28,7 +28,7 @@ class Vector {
 
     verifyVectorArr(arr) {
         if(this.#vector !== arr.length) {
-            throw new VectorValidationError(`Incorrect type of vector! Please, check your vector size!`);
+            throw new VectorValidationError(`Incorrect type of vector! Please, check that you have appropriate vector size!`);
         }
     }
 }
