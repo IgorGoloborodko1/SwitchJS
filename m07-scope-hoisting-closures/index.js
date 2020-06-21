@@ -15,7 +15,11 @@ const runningAverage = () => {
 // console.log(rAvg(12));
 
 //Task 2
-const sum = (a) => {
+const sum = (a, ...args) => {
+    if(args.length) {
+        return args.reduce((prev, current) =>  prev + current, a);
+    }
+
     let acc = a;
 
     const innerFn = (b) => {
@@ -28,6 +32,7 @@ const sum = (a) => {
     return innerFn;
 }
 
-// alert(sum(2,3));
+// alert(sum(2, 3));
+// alert(sum(1, 2, 3, 4, 5));
 // alert(sum(2)(3));
 // alert(sum(1)(2)(3)(4));

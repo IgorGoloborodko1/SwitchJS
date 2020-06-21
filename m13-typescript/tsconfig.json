@@ -1,8 +1,6 @@
 {
     "compilerOptions": {
         "target": "es5",
-        "outDir": "build",
-        "module": "es2015",
-        "moduleResolution": "node",
+        "outDir": "dist",
     }
 }

@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Animal = void 0;
 var Animal = /** @class */ (function () {
     function Animal(name) {
         this._energyLevel = 0;
@@ -22,4 +25,4 @@ var Animal = /** @class */ (function () {
     };
     return Animal;
 }());
-export { Animal };
+exports.Animal = Animal;

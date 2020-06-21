@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -11,7 +12,9 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import { Animal } from './animal';
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Orso = void 0;
+var animal_1 = require("./animal");
 var Orso = /** @class */ (function (_super) {
     __extends(Orso, _super);
     function Orso(name) {
@@ -50,5 +53,5 @@ var Orso = /** @class */ (function (_super) {
         this._id = arg;
     };
     return Orso;
-}(Animal));
-export { Orso };
+}(animal_1.Animal));
+exports.Orso = Orso;

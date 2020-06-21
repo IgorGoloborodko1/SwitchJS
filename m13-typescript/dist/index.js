@@ -1,5 +1,7 @@
-import { Orso } from './orso';
-var orso = new Orso('Medved');
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var orso_1 = require("./orso");
+var orso = new orso_1.Orso('Medved');
 console.log(orso.name);
 console.log(orso.makeSound());
 orso.eatMeat(100);
