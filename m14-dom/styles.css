@@ -1,5 +1,5 @@
 table {
-    border: 2px solid rgb(200,200,200);
+    border: 2px solid rgb(200, 200, 200);
 }
 
 tr {
@@ -7,18 +7,15 @@ tr {
 }
 
 td {
+    background-color: rgb(120, 194, 235);
     display: block;
     width: 30px;
     height: 20px;
     margin: 3px;
 }
 
-td {
-    background-color: rgb(120, 194, 235);
-}
-
 tr:nth-child(odd) td:nth-child(odd), tr:nth-child(even) td:nth-child(even){
-    background-color: palevioletred;
+    background-color: rgb(219,112,147);
 }
 
 .hidden {
